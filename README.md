@@ -7,9 +7,8 @@ Created by <a href="https://ai.stanford.edu/~optas" target="_blank">Panos Achlio
 ## Introduction
 This work is based on our ICCV-2019 [paper](https://arxiv.org/abs/1905.02925). 
 There, we proposed <i>speaker \& listener neural models</i> that reason and differentiate objects according to their <i>shape</i> via language (hence the term shape<i>--glot</i>).
-These models operate on <b>2D images and/or 3D point-clouds</b> and can learn enough about the part-based 
-compositionality of 3D objects from language <b>alone</b>. 
-The latter fact, makes them remarkably robust, enabling a plethora of <i>zero-shot-transfer</i> learning applications. You can check our [project's webpage](https://ai.stanford.edu/~optas/shapeglot) for a quick introduction and produced results.
+These models can operate on <b>2D images and/or 3D point-clouds</b> and do learn about natural properties of shapes, including the part-based 
+compositionality of 3D objects, from language <b>alone</b>. The latter fact, makes them remarkably robust, enabling a plethora of <i>zero-shot-transfer</i> learning applications. You can check our [project's webpage](https://ai.stanford.edu/~optas/shapeglot) for a quick introduction and produced results.
 
 
 ## Dependencies
@@ -29,18 +28,16 @@ pip install -e .
 
 ### Data Set
 We provide 78,782 utterances referring to a ShapeNet chair that was contrasted against two distractor chairs via the 
-reference game described in our accompanying paper. We further provide the data used in the Zero-Shot experiments which include
+reference game described in our accompanying paper (dataset termed as ChairsInContext). We further provide the data used in the Zero-Shot experiments which include
 300 images of real-world chairs, and 1200 referential utterances for ShapeNet lamps & tables & sofas, and 400 utterances describing ModelNet beds.
 Last, we include image-based (VGG-16) and point-cloud-based (PC-AE) pretrained features for all ShapeNet chairs to facilitate the training of the neural speakers and listeners.  
       
-To download the data (~218 MB):
+To download the data (~218 MB) please run the following commands. Notice, that you first need to accept the Terms Of Use [here](https://docs.google.com/forms/d/e/1FAIpQLScyV1AsZsfthqiPhuw6MFL1JZ4p8GSDPIj8uwH0BRWQl3tejw/viewform). Upon review we will email to you the necessary link that you need to put inside the desingated location of the download_data.sh file.
 ```
 cd shapeglot/
 ./download_data.sh
 ```
 The downloaded data will be stored in shapeglot/shapeglot_data
-
-*Important Note.* You must first accept the Terms Of Use [here](https://docs.google.com/forms/d/e/1FAIpQLScyV1AsZsfthqiPhuw6MFL1JZ4p8GSDPIj8uwH0BRWQl3tejw/viewform). 
 
 
 ### Usage
