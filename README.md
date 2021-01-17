@@ -32,12 +32,12 @@ reference game described in our accompanying paper (dataset termed as ChairsInCo
 300 images of real-world chairs, and 1200 referential utterances for ShapeNet lamps & tables & sofas, and 400 utterances describing ModelNet beds.
 Last, we include image-based (VGG-16) and point-cloud-based (PC-AE) pretrained features for all ShapeNet chairs to facilitate the training of the neural speakers and listeners.  
       
-To download the data (~218 MB) please run the following commands. Notice, that you first need to accept the Terms Of Use [here](https://docs.google.com/forms/d/e/1FAIpQLScyV1AsZsfthqiPhuw6MFL1JZ4p8GSDPIj8uwH0BRWQl3tejw/viewform). Upon review we will email to you the necessary link that you need to put inside the desingated location of the download_data.sh file.
+To download the data (~232 MB) please run the following commands. Notice, that you first need to accept the Terms Of Use [here](https://docs.google.com/forms/d/e/1FAIpQLScyV1AsZsfthqiPhuw6MFL1JZ4p8GSDPIj8uwH0BRWQl3tejw/viewform). Upon review we will email to you the necessary link that you need to put inside the desingated location of the download_data.sh file.
 ```
 cd shapeglot/
 ./download_data.sh
 ```
-The downloaded data will be stored in shapeglot/shapeglot_data
+The downloaded data will be stored in shapeglot/data
 
 
 ### Usage

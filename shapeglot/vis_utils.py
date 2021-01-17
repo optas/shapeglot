@@ -64,8 +64,15 @@ def visualize_example(geo_ids, utterance, target, sorted_sn_models, int_to_word,
 
     if guess is not None:
         print('Guessed correct:', guess)
-
-    print('Target:', target)
+    
+    if target == 0:
+        target_str = 'left-most'
+    elif target == 1:
+        target_str = 'middle'
+    else:
+        target_str = 'right-most'
+    
+    print('Target:', target_str)
     return next(visualize_triplet([geo_ids], sorted_sn_models, image_view_tag=image_view_tag))
 
 
