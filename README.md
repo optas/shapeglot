@@ -10,6 +10,12 @@ There, we proposed <i>speaker \& listener neural models</i> that reason and diff
 These models can operate on <b>2D images and/or 3D point-clouds</b> and do learn about natural properties of shapes, including the part-based 
 compositionality of 3D objects, from language <b>alone</b>. The latter fact, makes them remarkably robust, enabling a plethora of <i>zero-shot-transfer</i> learning applications. You can check our [project's webpage](https://ai.stanford.edu/~optas/shapeglot) for a quick introduction and produced results.
 
+## Related Works
+If you are interested in ShapeGlot, it is also worth looking at the newer and relevant dataset of [ShapeTalk](https://changeit3d.github.io/), along with the following technical papers concerning referential language and 3D shapes, that also tap and remark on ShapeGlot: 
+- [ShapeTalk, CVPR23](https://changeit3d.github.io/): Using discriminative neural **listeners** to edit 3D shapes via language.
+- [PartGlot, CVPR22](https://arxiv.org/abs/2112.06390): Discovering the 3D/shape **part-structure** automatically via ShapeGlot's referential language.
+- [LADIS, EMNLP22](https://arxiv.org/abs/2212.05011): **Disentangling** 3D/shape edits when using ShapeGlot and ShapeTalk.
+
 
 ## Dependencies
 Main Requirements:
